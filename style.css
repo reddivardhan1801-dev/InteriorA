@@ -547,6 +547,9 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) {
   .main-nav, .header-cta { display: none; }
   .nav-toggle { display: flex; }
+  .header-inner {
+  justify-content: space-between;
+}
 
   .main-nav.open {
     display: flex;
@@ -584,12 +587,13 @@ p { margin: 0 0 1em; }
     padding: 0 22px;
   }
 
+  /* HERO */
   .hero {
-    min-height: 500px;
+    min-height: 470px;
   }
 
   .hero-inner {
-    padding: 40px 0;
+    padding: 40px 22px;
   }
 
   .hero-copy {
@@ -606,6 +610,11 @@ p { margin: 0 0 1em; }
     margin-bottom: 24px;
   }
 
+  /* INTRO / SERVICES */
+  .intro-strip {
+    padding: 32px 0;
+  }
+
   .intro-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -616,6 +625,8 @@ p { margin: 0 0 1em; }
       "s1"
       "s2"
       "s3";
+
+    row-gap: 18px;
   }
 
   .intro-experience {
@@ -624,10 +635,53 @@ p { margin: 0 0 1em; }
     gap: 14px;
   }
 
+  .intro-number-label {
+    margin-top: 0;
+  }
+
+  .intro-desc {
+    margin-bottom: 0;
+    max-width: 30ch;
+  }
+
+  .intro-signature {
+    margin-top: 4px;
+  }
+
+  .intro-divider {
+    height: 1px;
+    min-height: 0;
+    width: 100%;
+    margin: 4px 0 8px;
+  }
+
+  .service-col {
+    margin: 0;
+  }
+
+  .service-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .service-col h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .service-col p {
+    font-size: 0.88rem;
+    margin-bottom: 0;
+    max-width: 32ch;
+  }
+
+  /* PROJECTS */
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
+  /* ABOUT */
   .about-stat-card {
     flex-direction: row;
     gap: 24px;
