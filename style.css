@@ -576,8 +576,19 @@ p { margin: 0 0 1em; }
 
   .projects-grid { grid-template-columns: 1fr 1fr; }
 
-  .about-grid { grid-template-columns: 1fr; }
-  .about-stat-card { position: static; margin-top: -40px; margin-left: 20px; margin-right: 20px; width: fit-content; }
+  .about-grid {
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.about-stat-card {
+  position: static;
+  margin-top: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 }
@@ -683,11 +694,33 @@ p { margin: 0 0 1em; }
 
   /* ABOUT */
   .about-stat-card {
-    flex-direction: row;
-    gap: 24px;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 22px;
+  margin: 16px 0 0;
+  box-sizing: border-box;
+}
+
+.about-stat {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-stat-number {
+  font-size: 1.8rem;
+}
+
+.about-stat-label {
+  line-height: 1.4;
+}
+
+.about-copy {
+  padding: 0;
+  margin-top: 8px;
+}
 
   .about-stat + .about-stat {
     padding-top: 0;
